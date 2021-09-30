@@ -25,6 +25,12 @@ Route::get('/kursus', function () {
     ]);
 });
 
+Route::get('/kuis', function () {
+    return view('kuis', [
+        "tittle" => "Quiz"
+    ]);
+});
+
 Route::get('/forum', function () {
     return view('forum', [
         "tittle" => "Forum"
