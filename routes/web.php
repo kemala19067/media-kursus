@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\CourseController;
 use Illuminate\Support\Facades\Route;
+use App\Models\course;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,24 +17,24 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home', [
-        "tittle" => "Home"
+        "title" => "Home"
     ]);
 });
 
-Route::get('/kursus', function () {
-    return view('kursus', [
-        "tittle" => "Course"
-    ]);
-});
+
+
+Route::get('/courses', [CourseController::class, 'index']);
+//halaman single course
+Route::get('courses/{course:slug}', [CourseController::class, 'show']);
 
 Route::get('/kuis', function () {
     return view('kuis', [
-        "tittle" => "Quiz"
+        "title" => "Quiz"
     ]);
 });
 
 Route::get('/forum', function () {
     return view('forum', [
-        "tittle" => "Forum"
+        "title" => "Forum"
     ]);
 });

@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link {{ ($title === "Home") ? 'active' : '' }}" href="/">Home</a>
           </li>
         </li>
         <li class="nav-item dropdown">
@@ -15,13 +15,13 @@
             Course
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="/kursus">Materi</a></li>
+            <li><a class="dropdown-item" href="/courses">Materi</a></li>
             <li><a class="dropdown-item" href="#">Bookmark</a></li>
           </ul>
         </li>
         </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="/kuis" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Quiz
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -30,9 +30,12 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/forum">Forum</a>
+            <a class="nav-link {{ ($title === "Forum") ? 'active' : '' }}" href="/forum">Forum</a>
 
         </ul>
       </div>
     </div>
   </nav>
+
+
+
