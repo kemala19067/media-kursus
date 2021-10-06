@@ -36,7 +36,7 @@
               </svg>
             <h2 style="padding: 5px">Course</h2>
           <p>Menyediakan materi-materi mengenai mata pelajatan Teknologi Informasi dan Komunikasi</p>
-          <p><a class="btn btn-secondary" href="/courses">View details &raquo;</a></p>
+          <p><a class="btn btn-outline-primary" href="/courses">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-ui-checks" viewBox="0 0 16 16">
@@ -44,7 +44,7 @@
               </svg>
           <h2 style="padding: 5px">Quiz</h2>
           <p>Soal-soal untuk mengetahui pemahaman mengenai mata pelajaran Teknologi Informasi dan Komunikasi</p>
-          <p><a class="btn btn-secondary" href="/kuis">View details &raquo;</a></p>
+          <p><a class="btn btn-outline-primary" href="/kuis">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
             <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-chat-square-text" viewBox="0 0 16 16">
@@ -53,7 +53,7 @@
               </svg>
           <h2 style="padding: 5px">Forum</h2>
           <p>Wadah untuk berdiskusi sekitar mata pelajaran Teknologi Informasi dan Komunikasi</p>
-          <p><a class="btn btn-secondary" href="/forum">View details &raquo;</a></p>
+          <p><a class="btn btn-outline-primary" href="/forum">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
   </div>
